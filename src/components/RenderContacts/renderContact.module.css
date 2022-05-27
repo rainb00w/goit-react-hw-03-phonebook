@@ -1,0 +1,59 @@
+.button5 {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: #2b90de;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui, -apple-system, system-ui, 'Helvetica Neue', Helvetica,
+    Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  margin: 0;
+  min-height: 3rem;
+  padding: 10px;
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+.button5:hover,
+.button5:focus {
+  background-color: #2f99ea;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.button5:hover {
+  transform: translateY(-1px);
+}
+
+.button5:active {
+  background-color: #2374b2;
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  transform: translateY(0);
+}
+
+.text {
+  display: block;
+  width: 200px;
+  float: left; /* makes the element act like inline block */
+  clear: left;
+  font-weight: 700;
+}
+
+.contactsList {
+  display: block;
+  width: 200px;
+  float: left; /* makes the element act like inline block */
+  clear: left;
+}
