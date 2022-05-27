@@ -7,10 +7,7 @@ import Filter from './Filter';
 
 class App extends Component {
   state = {
-    contacts: [
-      { id: 'id-1', name: 'Rosie Simpson', number: '459-12-56' },
-      { id: 'id-2', name: 'Hermione Kline', number: '443-89-12' },
-    ],
+    contacts: [],
     filter: '',
   };
 
@@ -47,6 +44,21 @@ class App extends Component {
   changeFilter = evnt => {
     this.setState({ filter: evnt.currentTarget.value });
   };
+
+  componentDidMount() {
+    const contacts = localStorage.getItem('contacts');
+    const parsedContacts = JSON.parse(contacts);
+
+    if (parsedContacts) {
+      this.setState({ contacts: parsedContacts });
+    }
+  }
+
+  componentDidUpdate(prevState) {
+    if (this.state.contacts !== prevState.contacts) {
+      localStorage.setItem('contacts', JSON.stringify(this.state.contacts));
+    }
+  }
 
   render() {
     const normalizedFilter = this.state.filter.toLowerCase();

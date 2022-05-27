@@ -1,59 +1,66 @@
-.button5 {
-  align-items: center;
-  background-clip: padding-box;
-  background-color: #fa6400;
-  border: 1px solid transparent;
-  border-radius: 0.25rem;
-  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+/* CSS */
+.button3 {
+  appearance: none;
+  background-color: #49b935;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, 0.1) 0 1px 0;
   box-sizing: border-box;
   color: #fff;
   cursor: pointer;
-  display: inline-flex;
-  font-family: system-ui, -apple-system, system-ui, 'Helvetica Neue', Helvetica,
-    Arial, sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  justify-content: center;
-  line-height: 1.25;
-  margin-top: 15px;
-  min-height: 3rem;
-  padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
+  display: inline-block;
+  font-family: -apple-system, system-ui, 'Segoe UI', Helvetica, Arial,
+    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px 10px;
   position: relative;
+  text-align: center;
   text-decoration: none;
-  transition: all 250ms;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  vertical-align: baseline;
-  width: auto;
+  vertical-align: middle;
+  white-space: nowrap;
 }
 
-.button5:hover,
-.button5:focus {
-  background-color: #fb8332;
-  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+.button3:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
 }
 
-.button5:hover {
-  transform: translateY(-1px);
+.button3:hover {
+  background-color: #2c974b;
 }
 
-.button5:active {
-  background-color: #c85000;
-  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
-  transform: translateY(0);
+.button3:focus {
+  box-shadow: rgba(46, 164, 79, 0.4) 0 0 0 3px;
+  outline: none;
+}
+
+.button3:disabled {
+  background-color: #94d3a2;
+  border-color: rgba(27, 31, 35, 0.1);
+  color: rgba(255, 255, 255, 0.8);
+  cursor: default;
+}
+
+.button3:active {
+  background-color: #298e46;
+  box-shadow: rgba(20, 70, 32, 0.2) 0 1px 0 inset;
 }
 
 .text {
   display: block;
+  margin-right: 15px;
   font-weight: 700;
   padding-top: 15px;
 }
 
 .form {
-  display: block;
-  width: 10em;
-  float: left; /* makes the element act like inline block */
-  clear: left;
+  display: flex;
+  align-items: flex-end;
+  width: 400px;
+
   margin-bottom: 20px;
 }

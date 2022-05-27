@@ -9,8 +9,11 @@ const RenderContacts = ({ contacts, onDeleteContact }) => {
         {contacts.map(({ id, name, number }) => (
           <li key={id}>
             <p>
-              {name} : {number} -
-              <button className={s.button5} onClick={() => onDeleteContact(id)}>
+              <span className="boldFont">{name}</span> : ( {number} )
+              <button
+                className={s.button24}
+                onClick={() => onDeleteContact(id)}
+              >
                 Delete
               </button>
             </p>

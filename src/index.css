@@ -7,6 +7,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: rgb(79, 79, 79);
 }
 
 code {
@@ -16,4 +17,8 @@ code {
 
 .wrap {
   margin: 30px;
+}
+
+.boldFont {
+  font-weight: 700;
 }

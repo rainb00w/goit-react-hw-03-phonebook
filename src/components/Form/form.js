@@ -48,8 +48,7 @@ class Form extends Component {
             required
           />
         </label>
-
-        <button className={s.button5} type="submit">
+        <button className={s.button3} type="submit">
           Add contact
         </button>
       </form>
